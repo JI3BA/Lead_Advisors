@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
+    <link rel="stylesheet" href="./styles/media-queries768px.css" type="text/css">
+    <link rel="stylesheet" href="./styles/media-queries360px.css" type="text/css">
+    <title>Test</title>
+</head>
+<body>
+    <main class="main">
+        <div class="wrapper">
+            <section class="main__container">
+                <a href='' class="main__logo">
+                    <img src="./img/title-group.svg" class="main__logo--image" alt="logo">
+                </a>
+    
+                <div class="main__title">
+                    <h1 class="title__text">Under Construction</h1>
+                </div>
+    
+                <div class="main__description">
+                    <p class="description__text">We're making lots of improvements and will be back soon</p>
+                </div>
+    
+                <div class="main__timer">
+                    <div class="time__container">
+                        <div class="time__number">
+                            <p class="number days__number"></p>
+                        </div>
+
+                        <div class="time__description">
+                            <p class="timer__figure"></p>
+                            <p class="time__days days"></p>
+                        </div>
+                    </div>
+    
+                    <div class="time__colon">
+                        <p class="colon time__number">:</p>
+                    </div>
+    
+                    <div class="time__container">
+                        <div class="time__number">
+                            <p class="number hours__number"></p>
+                
+                        </div>
+                        <div class="time__description">
+                            <p class="timer__figure"></p>
+                            <p class="time__days hours"></p>
+                        </div>
+                    </div>
+    
+                    <div class="time__colon">
+                        <p class="colon time__number">:</p>
+                    </div>
+    
+                    <div class="time__container">
+                        <div class="time__number">
+                            <p class="number minutes__number"></p>
+                        </div>
+                        <div class="time__description">
+                            <p class="timer__figure"></p>
+                            <p class="time__days minutes"></p>
+                        </div>
+                    </div>
+    
+                    <div class="time__colon">
+                        <p class="colon time__number">:</p>
+                    </div>
+    
+                    <div class="time__container">
+                        <div class="time__number">
+                            <p class="number seconds__number"></p>
+                        </div>
+                        <div class="time__description">
+                            <p class="timer__figure"></p>
+                            <p class="time__days seconds"></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="description__prepend-button">
+                    <p class="description__text prepend-button__text">Check our event page when you wait:</p>
+                </div>
+    
+                <div class="main__button">
+                    <a href='https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/HTML_basics' class="button description__text"><span class="button__text">Go to the event</span> <svg class='button__arrow' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16675 10H15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 4.16666L15.8333 9.99999L10 15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </section>
+
+            <p class="background-image__left"></p>
+            <p class="background-image__right"></p>
+    
+            <footer class="footer">
+                <div class="footer__container">
+                    <form class="footer__search">
+                        <input class="footer__input" type="text" maxlength="36" placeholder="Enter your Email and get notified">
+            
+                        <button class="footer__button">
+                            <svg class='footer__arrow' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.16675 10H15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10 4.16666L15.8333 9.99999L10 15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+            
+                    <div class="footer__next-event">
+                        <a class="event__link">Other Events <svg class='event__arrow' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.16675 10H15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10 4.16666L15.8333 9.99999L10 15.8333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+    
+            <section class="modal">
+                <div class="modal__container">
+                    <div class="modal__message">
+                        <div class="modal__title">
+                            <h1 class="title__text modal__text"></h1>
+                        </div>
+    
+                        <p class="description__text modal__description"></p>
+    
+                        <button class="button modal__button description__text">
+                            Close
+                        </button>
+                        
+                       
+                        <svg class='modal__cross' width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6711 12.8072L24.0706 2.40765C24.4368 2.04151 24.4368 1.44789 24.0706 1.08179C23.7045 0.715702 23.1109 0.715655 22.7448 1.08179L12.3452 11.4814L1.94568 1.08179C1.57954 0.715655 0.985913 0.715655 0.61982 1.08179C0.253727 1.44794 0.25368 2.04156 0.61982 2.40765L11.0193 12.8072L0.61982 23.2068C0.25368 23.5729 0.25368 24.1665 0.61982 24.5326C0.802866 24.7157 1.04282 24.8072 1.28277 24.8072C1.52272 24.8072 1.76263 24.7157 1.94572 24.5326L12.3452 14.1331L22.7447 24.5326C22.9278 24.7157 23.1677 24.8072 23.4077 24.8072C23.6476 24.8072 23.8875 24.7157 24.0706 24.5326C24.4368 24.1665 24.4368 23.5729 24.0706 23.2068L13.6711 12.8072Z" fill="#135978" fill-opacity="0.5"/>
+                        </svg>
+                        
+                    </div>
+            </section>
+    
+            <section id="events" class="events__container">
+    
+                <div class="main__title event__title">
+                    <h1 class="event__text title__text">All events</h1>
+                </div>
+    
+                <div class="accordion__container">
+                    <section class="accordion__item accordion__item--active">
+                        <div class="accordion__image accordion__image--hawaii accordion__image--active">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__one"></p>
+                                    <p class="accordion__number">01</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--hawaii accordion__description--active">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">01</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__one"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>  
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--mafia">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__two"></p>
+                                    <p class="accordion__number">02</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--mafia">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">02</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__two"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--party">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__three"></p>
+                                    <p class="accordion__number">03</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--party">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">03</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__three"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--beach">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__four"></p>
+                                    <p class="accordion__number">04</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--beach">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">04</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__four"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--home">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__five"></p>
+                                    <p class="accordion__number">05</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--home">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">05</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__five"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--network">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__six"></p>
+                                    <p class="accordion__number">06</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--network">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">06</div>
+                                    <div class="description__about"> 
+                                        <h2 class="description__title description__title--network name__six"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--system">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__seven"></p>
+                                    <p class="accordion__number">07</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--system">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">07</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__seven"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                    <section class="accordion__item">
+                        <div class="accordion__image accordion__image--client">
+                            <div class="accordion__title">
+                                <div class="accordion__text">
+                                    <p class="accordion__name name__eight"></p>
+                                    <p class="accordion__number">08</p>
+                                </div>
+                                <p class="accordion__line"></p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion__description accordion__description--client">
+                            <div class="accordion__about">
+                                <div class="accordion__blur">
+                                    <div class="accordion__title-number">08</div>
+                                    <div class="description__about">
+                                        <h2 class="description__title name__eight"></h2>
+                                        <p class="description__date">13.02.2023</p>
+                                        <a href="https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web/CSS_basics" class="description__link"><button class="description__button">More information</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="accordion__line line__desc"></p>
+                        </div>
+                    </section>
+    
+                </div>
+    
+            </section>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

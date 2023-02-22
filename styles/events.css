@@ -1,0 +1,341 @@
+@import url('https://v1.fontapi.ir/css/SFProDisplay:400;500;600');
+
+.events__container{
+    padding: 110px 0;
+    max-width: 100%;
+    width: 100%;
+    height: 0;
+    display: none;
+    transition: 1s;
+    background: #F5F5F5;
+}
+
+.event__title{
+    padding: 0;
+}
+
+.accordion__container{
+    margin: 40px 0 100px 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'SF Pro Display';
+}
+
+.accordion__item{
+    display: flex;
+    max-width: 85px;
+    width: 100%;
+    margin-right: 4px;
+    transition: 1s ease-in-out;
+}
+
+.accordion__item--active{
+    max-width: 995px;
+    width: 100%;
+    transition: 1s ease-in-out;
+}
+
+.accordion__item:nth-last-child(0){
+    margin-right: 0px;
+}
+
+.accordion__image{
+    max-width: 85px;
+    width: 100%;
+    height: 682px;
+    background-blend-mode: darken;
+    z-index: 7;
+    cursor: pointer;
+}
+
+.accordion__image--hawaii{
+    background: url(../img/hawaii-party.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-position: center;
+    background-size: cover;
+}
+
+.accordion__image--mafia{
+    background: url(../img/mafia-party.jpg),
+    linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%),
+    rgba(18, 18, 18, 0.7);
+    background-position: center;
+    background-size: cover;
+}
+
+.accordion__image--party{
+    background: url(../img/party.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-position: center;
+    background-size: cover;
+}
+
+.accordion__image--beach{
+    background: url(../img/party-on-the-bitch.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-position: center;
+    background-size: cover;
+}
+
+.accordion__image--home{
+    background: url(../img/party-on-the-bitch.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-size: cover;
+    background-position: 85% 50%;
+}
+
+.accordion__image--network{
+    background: url(../img/network-design.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-size: cover;
+    background-position: 81% 50%;
+}
+
+.accordion__image--system{
+    background: url(../img/system-design.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-size: cover;
+    background-position: 30% 50%;
+}
+
+.accordion__image--client{
+    background: url(../img/party.jpg),
+    rgba(18, 18, 18, 0.7);
+    background-size: cover;
+    background-position: 25% 50%;
+}
+
+.accordion__image--active{
+    background-color: #162C4E;
+    z-index: 7;
+    background-image: none;
+    cursor: default;
+    transition: 1s;
+}
+
+.accordion__darken{
+    background: rgba(18, 18, 18, 0.7);
+    background-blend-mode: darken;
+}
+
+.accordion__title{
+    max-width: 85px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%);
+}
+
+.accordion__background--image{
+    cursor: pointer;
+}
+
+.accordion__line{
+    max-width: 100%;
+    width: 100%;
+    border: 2px solid #DF2224;
+    box-shadow: 0px 0px 10px #FF1E00;
+}
+
+.accordion__name{
+    padding-left: 70px;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
+
+.name__one::before{
+    content: 'Hawaiian party'
+}
+
+.name__two::before{
+    content: 'Мafia party'
+}
+
+.name__three::before{
+    content: 'Party'
+}
+
+.name__four::before{
+    content: 'Party on the beach'
+}
+
+.name__five::before{
+    content: 'Home Security'
+}
+
+.name__six::before{
+    content: 'Network Design & Implementation'
+}
+
+.name__seven::before{
+    content: 'System Design & Engineering'
+}
+
+.name__eight::before{
+    content: 'Client Care Plans'
+}
+
+.accordion__number{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    text-align: right;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+}
+
+.accordion__description{
+    z-index: 5;
+    position: relative;
+    max-width: 0;
+    width: 100%;
+    height: 682px;
+    opacity: 0.5;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+.accordion__description--active{
+    z-index: 6;
+    max-width: 955px;
+    width: 100%;
+    height: 682px;
+    margin-left: 2px;
+    opacity: 1;
+    background-position: center;
+    transition: 1s ease-in-out;
+}
+
+.accordion__description--hawaii{
+    background-image: url(../img/hawaii-party.jpg);
+}
+
+.accordion__description--mafia{
+    background-image: url(../img/mafia-party.jpg);
+}
+
+.accordion__description--party{
+    background-image: url(../img/party.jpg);
+}
+
+.accordion__description--beach{
+    background-image: url(../img/party-on-the-bitch.jpg);
+}
+
+.accordion__description--home{
+    background-image: url(../img/party-on-the-bitch.jpg);
+}
+
+.accordion__description--network{
+    background-image: url(../img/network-design.jpg);
+}
+
+.accordion__description--system{
+    background-image: url(../img/system-design.jpg);
+}
+
+.accordion__description--client{
+    background-image: url(../img/party.jpg);
+}
+
+.accordion__about{
+    display: flex;
+}
+
+.accordion__blur{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 364px;
+    width: 100%;
+    height: 682px;
+    background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: blur(20px);
+    transition: 1s ease-in-out;
+    z-index: 6;
+}
+
+.accordion__title-number{
+    position: relative;
+    top: -30px;
+    left: -120px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 380px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    color: rgba(255, 255, 255, 0.04);
+    z-index: 2;
+}
+
+.description__title{
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.description__title--network{
+    max-width: 250px;
+    width: 100%;
+}
+
+.description__about{
+    max-width: 100%;
+    width: 100%;
+    padding: 0 0 50px 42px;
+    transition: 1s ease-in-out;
+}
+
+.description__date{
+    position: relative;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 0 25px 0;
+    z-index: 3;
+}
+
+.description__link{
+    text-decoration: none;
+}
+
+.description__button{
+    position: relative;
+    padding: 20px 56px;
+    background: transparent;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    border-left-width: 8px;
+    font-style: normal;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    z-index: 3;
+}
+
+.line__desc{
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+}

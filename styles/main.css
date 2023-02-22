@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.main{
+    font-family: 'Poppins', sans-serif;
+    background: #F5F5F5;
+}
+
+.main__container{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__logo{
+    margin-top: 110.14px;
+    animation-name: smooth__appereance--logo;
+    animation-duration: 2s;
+}
+
+.main__logo--image{
+    width: 190px;
+    height: 59.09px;
+}
+
+.main__title{
+    padding: 168.42px 0 20px 0;
+    animation-name: smooth__appereance--title;
+    animation-duration: 2s;
+}
+
+.title__text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 104%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #162C4E;
+    opacity: 0.39;
+}
+
+.main__description{
+    max-width: 423px;
+    width: 100%;
+    animation-name: smooth__appereance--title;
+    animation-duration: 2s;
+}
+
+.description__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+    animation-name: full__content;
+    animation-duration: 2s;
+}
+
+.main__timer{
+    max-width: 588px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0 70.82px 0;
+    animation-name: smooth__appereance--timer;
+    animation-duration: 2s;
+}
+
+.time__number{
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 100%;
+    color: #162C4E;
+}
+
+.colon{
+    text-align: end;
+}
+
+.time__description{
+    position: relative;
+}
+
+.timer__figure{
+    background-image: url(../img/figure-timer.svg);
+    width: 132px;
+    height: 54.12px;
+}
+
+.time__days{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.days::after{
+    content: 'Days'
+}
+
+.hours::after{
+    content: 'Hours'
+}
+
+.minutes::after{
+    content: 'Minutes'
+}
+
+.seconds::after{
+    content: 'Seconds'
+}
+
+.number{
+    text-align: center;
+    width: 90px;
+}
+
+.prepend-button__text{
+    animation-name: smooth__appereance--button;
+    animation-duration: 2s;
+}
+
+.main__button{
+    margin: 12px 0 156px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-name: smooth__appereance--button;
+    animation-duration: 2s;
+}
+
+.button{
+    padding: 16px 20px 17px 28px;
+    color: #FFFFFF;
+    background: #1D4169;
+    border-radius: 40px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button__text{
+    font-family: 'Poppins', sans-serif;
+    width: 171px;
+    text-align: start;
+}
+
+.button > .button__arrow{
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+
+.button:hover > .button__arrow{
+    transform: translateX(-20px);
+}
+
+.background-image__left{
+    background-image: url(../img/background__image-left.svg);
+    width: 470px;
+    height: 419px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: smooth__appereance--left;
+    animation-duration: 2s;
+}
+
+@keyframes smooth__appereance--logo {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smooth__appereance--title {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smooth__appereance--timer {
+    0%{
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smooth__appereance--button {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes smooth__appereance--left {
+    from {
+        transform: translate(-300px,-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    
+}
+
+.background-image__right{
+    background-image: url(../img/background__image-right.svg);
+    width: 271px;
+    height: 327px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: smooth__appereance--right;
+    animation-duration: 2s;
+}
+
+@keyframes smooth__appereance--right {
+    from {
+        transform: translate(300px,-300px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+    
+}

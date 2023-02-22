@@ -1,0 +1,155 @@
+@media screen and (max-width: 360px) {
+   .main__logo{
+        margin-top: 79.09px;
+        width: 190px;
+        height: 59px;
+   }
+   
+   .background-image__left{
+        background-image: url(../img/background__image-left--mob.svg);
+        width: 182px;
+        height: 146px;
+   }
+
+   .background-image__right{
+        background-image: url(../img/background__image-right--mob.svg);
+        width: 183px;
+        height: 215px;
+   }
+
+   .main__timer{
+        max-width: 310px;
+        width: 100%;
+   }
+
+   .footer__search{
+    width: 280px;
+    margin: 0 0 16px 0;
+    }
+
+    .footer__input{
+        max-width: 230px;
+        width: 100%;
+        line-height: 21px;
+        margin: 10px 0 10px 10px;
+    }
+
+    .modal{
+        z-index: 10;
+    }
+
+    .accordion__item{
+        max-height: 64px;
+    }
+
+    .accordion__item--active{
+        max-width: 320px;
+        width: 100%;
+        max-height: 440px;
+    }
+
+    .accordion__image{
+        max-width: 320px;
+        width: 320px;
+        height: 64px;
+        background-size: cover;
+    }
+
+    .accordion__title{
+        max-width: 320px;
+        width: 100%;
+    }
+
+    .accordion__text{
+        padding-top: 4px;
+        height: 64px;
+    }
+
+    .accordion__description{
+        max-width: 320px;
+        width: 100vw;
+        max-height: 0px;
+        height: 100vh;
+    }
+
+    .accordion__name{
+        font-size: 18px;
+        padding-left: 16px;
+    }
+
+    .name__one::before{
+        content: 'Custom Home Automation'
+    }
+
+    .name__two::before{
+        content: 'Whole Home Audio Solutions'
+    }
+
+    .name__three::before{
+        content: 'Distributed Video'
+    }
+
+    .name__four::before{
+        content: 'Lighting Control'
+    }
+
+    .name__six::before{
+        white-space: pre-wrap;
+    }
+
+    .name__seven{
+        width: 160px;
+    }
+
+    .name__seven::before{
+        white-space: pre-line;
+    }
+
+    .accordion__number{
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .accordion__description--active{
+        max-width: 320px;
+        width: 100vw;
+        max-height: 440px;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        transition: 1s ease-in-out;
+    }
+
+    .accordion__description--hawaii{
+        background-image: url(../img/hawaii-party.jpg);
+    }
+
+    .accordion__blur{
+        max-height: 158px;
+        max-width: 320px; 
+    }
+
+    .accordion__title-number{
+        top: -20px;
+        left: 10px;
+        font-size: 80px;
+    }
+
+    .description__about{
+        padding: 0 0 0 20px;
+    }
+
+    .description__title{
+        font-size: 16px;
+    }
+
+    .description__date{
+        font-size: 14px;
+        padding: 8px 0 22px 0;
+    }
+
+    .description__button{
+        padding: 12.5px 24px;
+        font-size: 16px;
+    }
+}
