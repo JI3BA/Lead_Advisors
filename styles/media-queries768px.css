@@ -164,6 +164,7 @@
         align-items: flex-start;
         max-width: 668px;
         width: 100%;
+        background: linear-gradient(270deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%);
     }
 
     .accordion__text{

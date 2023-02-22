@@ -97,7 +97,6 @@ function accordionSwitch(){
         item.addEventListener('click', () => {
 
             let child = item.nextElementSibling
-            console.log(item)
 
             if(!child.classList.contains('accordion__description--active')){
                 document.querySelectorAll('.accordion__description').forEach(item => item.classList.remove('accordion__description--active'))

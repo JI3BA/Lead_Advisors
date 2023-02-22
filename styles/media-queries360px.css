@@ -38,6 +38,10 @@
         z-index: 10;
     }
 
+    .event__title{
+        z-index: 10;
+    }
+
     .accordion__item{
         max-height: 64px;
     }
@@ -120,8 +124,14 @@
         transition: 1s ease-in-out;
     }
 
-    .accordion__description--hawaii{
-        background-image: url(../img/hawaii-party.jpg);
+    .accordion__image--beach{
+        background-position: 50% 30%;
+        background-size: 120% 180%;
+    }
+
+    .accordion__image--home{
+        background-size: 120% 180%;
+        background-position: 50% 120%;
     }
 
     .accordion__blur{
