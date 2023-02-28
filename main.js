@@ -14,7 +14,7 @@ function validationForm(){
         if(validEmail.test(input.value)){
             btn.removeAttribute('disable', true)
         
-            const requestURL = '/index.html';
+            const requestURL = './index.html';
 
             const xhr = new XMLHttpRequest();
             xhr.open('GET', requestURL);
