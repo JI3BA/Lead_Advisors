@@ -17,3 +17,7 @@
     flex-direction: column;
     overflow-x: hidden;
 }
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}

@@ -1,7 +1,10 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .wrapper{
-        max-width: 768px;
         width: 100%;
+    }
+
+    .wrapper::-webkit-scrollbar{
+        width: 0;
     }
 
     .main__logo{
@@ -10,13 +13,15 @@
 
     .background-image__left{
         background-image: url(../img/background__image-left--tl.svg);
-        width: 249px;
+        max-width: 249px;
+        width: 100%;
         height: 209px;
     }
 
     .background-image__right{
         background-image: url(../img/background__image-right--tl.svg);
-        width: 280px;
+        max-width: 280px;
+        width: 100%;
         height: 294px;
     }
 

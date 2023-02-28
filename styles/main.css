@@ -170,7 +170,8 @@
 
 .background-image__left{
     background-image: url(../img/background__image-left.svg);
-    width: 470px;
+    max-width: 470px;
+    width: 100%;
     height: 419px;
     position: absolute;
     top: 0;
@@ -246,7 +247,8 @@
 
 .background-image__right{
     background-image: url(../img/background__image-right.svg);
-    width: 271px;
+    max-width: 271px;
+    width: 100%;
     height: 327px;
     position: absolute;
     top: 0;

@@ -1,4 +1,12 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 490px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .wrapper::-webkit-scrollbar{
+        width: 0;
+    }
+
    .main__logo{
         margin-top: 79.09px;
         width: 190px;
